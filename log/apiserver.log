@@ -1,0 +1,7 @@
+2022-04-16 15:33:49.594 ERROR model/init.go:31 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-04-16 15:33:49.676 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-04-16 15:33:49.677 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-04-16 15:33:49.680 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-04-16 16:26:10.162 INFO middleware/logging.go:84 662.3µs       | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-04-16 16:55:37.055 INFO middleware/logging.go:84 370.5µs       | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}
+2022-04-18 14:31:04.366 INFO config/config.go:86 Config file changed: D:\all project\go\restfulapiserver\conf\config.yaml
