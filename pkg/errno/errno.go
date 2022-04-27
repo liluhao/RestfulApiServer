@@ -42,12 +42,12 @@ func DecodeErr(err error) (int, string) {
 
 //同时也提供了Add()和Addf()函数，如果想对外展示更多的信息可以调用比函数，使用方法
 func (err *Err) Add(message string) error {
-	err.Message += " " + message
+	err.Message += message + " "
 	return err
 }
 
 func (err *Err) Addf(format string, args ...interface{}) error {
-	err.Message += " " + fmt.Sprintf(format, args...)
+	err.Message += fmt.Sprintf(format, args...) + " "
 	return err
 }
 

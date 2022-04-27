@@ -15,7 +15,6 @@ var (
 	ErrMissingHeader = errors.New("The length of the `Authorization` header is zero.")
 )
 
-// Context is the context of the JSON web token.
 type Context struct {
 	ID       uint64
 	Username string

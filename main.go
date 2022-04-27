@@ -95,7 +95,7 @@ func pingServer() error {
 	//GetInt函数可以把传入的Int给转换成为Int类型
 	for i := 0; i < viper.GetInt("max_ping_count"); i++ {
 		// Ping the server by sending a GET request to `/health`.
-		resp, err := http.Get(viper.GetString("url") + "/sd/health") //http里的函数，就会得到一个响应体
+		resp, err := http.Get("/sd/health" + viper.GetString("url")) //http里的函数，就会得到一个响应体
 		if err == nil && resp.StatusCode == 200 {
 			return nil
 		}

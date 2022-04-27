@@ -21,7 +21,7 @@ const (
 //检查API Server的状态：健康状况。
 func HealthCheck(c *gin.Context) {
 	message := "OK"
-	c.String(http.StatusOK, "\n"+message)
+	c.String(http.StatusOK, message+"\n")
 }
 
 //检查API Server的状态：服务器硬盘
@@ -46,7 +46,7 @@ func DiskCheck(c *gin.Context) {
 	}
 	//比如我的电脑D盘总公250G，用了119G，网页输出OK - Free space: 134132MB (130GB) / 256708MB (250GB) | Used: 52%
 	message := fmt.Sprintf("%s - Free space: %dMB (%dGB) / %dMB (%dGB) | Used: %d%%", text, usedMB, usedGB, totalMB, totalGB, usedPercent)
-	c.String(status, "\n"+message)
+	c.String(status, message+"\n")
 }
 
 //检查API Server的状态：CPU使用量。
@@ -71,7 +71,7 @@ func CPUCheck(c *gin.Context) {
 	}
 	//举例网页输出：OK - Load average: 0.00, 0.00, 0.00 | Cores: 8
 	message := fmt.Sprintf("%s - Load average: %.2f, %.2f, %.2f | Cores: %d", text, l1, l5, l15, cores) //默认宽度，精度为2
-	c.String(status, "\n"+message)
+	c.String(status, message+"\n")
 }
 
 //检查API Server的状态：内存使用量。
@@ -96,5 +96,5 @@ func RAMCheck(c *gin.Context) {
 	}
 	//举例网页输出：OK - Free space: 11246MB (10GB) / 15734MB (15GB) | Used: 71%
 	message := fmt.Sprintf("%s - Free space: %dMB (%dGB) / %dMB (%dGB) | Used: %d%%", text, usedMB, usedGB, totalMB, totalGB, usedPercent)
-	c.String(status, "\n"+message)
+	c.String(status, message+"\n")
 }

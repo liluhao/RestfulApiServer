@@ -19,7 +19,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	// 中间件
 	/*gin.Recovery()：在处理某些请求时可能因为程序bug或者其他异常情况导致程序panic,这时候为了
 	不影响下一次请求的调用，需要通过gin.Recovery()来恢复API服务器*/
-	g.Use(gin.Recovery())
+	g.Use(gin.Recovery())     //第一种中间件：全局中间件
 	g.Use(middleware.NoCache) //middleware.NoCache:
 	g.Use(middleware.Options) //middleware.Options:
 	g.Use(middleware.Secure)  //middleware.Secure:
@@ -35,14 +35,14 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	// pprof router
 	pprof.Register(g)
 
-	// api for authentication functionalities
+	// 在登录接口中采用明文校验用户名密码的方式，登录成功之后再产生token
 	g.POST("/login", user.Login)
 
 	// 用户路由设置
 	/*在RESTful API开发中，API经常会变动，为了兼容老的API,引入了版本的概念，比如上例中的v1/user,说明该API版本是v1。
 	很多RESTful API最佳实践文章中均建议使用版本控制，笔者这里也建议对API使用版本控制。*/
 	u := g.Group("/v1/user")
-	u.Use(middleware.AuthMiddleware())
+	u.Use(middleware.AuthMiddleware()) //第三种中间件：群组中间件
 	{
 		u.POST("", user.Create)       //创建用户
 		u.DELETE("/:id", user.Delete) //删除用户

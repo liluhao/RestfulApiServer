@@ -15,6 +15,8 @@ import (
 	"github.com/zxmrlc/log"
 )
 
+/*为了演示中间件的功能，这里给apiserver新增功能：
+日志记录每一个收到的请求*/
 type bodyLogWriter struct {
 	gin.ResponseWriter
 	body *bytes.Buffer
