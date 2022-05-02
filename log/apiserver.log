@@ -5,3 +5,214 @@
 2022-04-16 16:26:10.162 INFO middleware/logging.go:84 662.3µs       | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}
 2022-04-16 16:55:37.055 INFO middleware/logging.go:84 370.5µs       | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}
 2022-04-18 14:31:04.366 INFO config/config.go:86 Config file changed: D:\all project\go\restfulapiserver\conf\config.yaml
+2022-04-28 00:33:16.390 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-04-28 00:33:16.451 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-04-28 00:33:16.451 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-04-28 00:33:16.452 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:17.453 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:18.453 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:19.453 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:20.454 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:21.454 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:22.455 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:23.455 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:24.456 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:25.456 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-04-28 00:33:26.457 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-02 13:07:21.076 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 13:07:21.201 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 13:07:21.202 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 13:07:21.202 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:22.202 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:23.202 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:24.203 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:25.203 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:26.204 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:27.204 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:28.204 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:29.204 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:30.205 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 13:07:31.205 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-02 19:49:46.080 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 19:49:46.180 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 19:49:46.180 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 19:49:46.180 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:47.181 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:48.181 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:49.182 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:50.182 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:51.182 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:52.183 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:53.183 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:54.183 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:55.184 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 19:49:56.184 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-02 20:06:55.877 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 20:06:55.985 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 20:06:55.985 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 20:06:55.985 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:06:56.986 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:06:57.986 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:06:58.987 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:06:59.987 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:07:00.987 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:07:01.988 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:07:02.988 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:07:03.989 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:07:04.989 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-02 20:07:05.990 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-02 20:14:23.460 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 20:14:23.583 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 20:14:23.583 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 20:14:24.090 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-02 20:19:50.685 INFO middleware/logging.go:86 368.6µs       | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 20:42:13.314 INFO middleware/logging.go:86 500.2µs       | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 20:42:25.798 INFO middleware/logging.go:86 387.4µs       | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 20:42:57.358 INFO middleware/logging.go:86 337µs         | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 20:52:14.695 INFO middleware/logging.go:86 508.2µs       | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 20:53:00.678 INFO middleware/logging.go:86 0s            | ::1          | GET /v1/user/admin | {code: 20103, message: The token was invalid.}
+2022-05-02 20:53:01.970 INFO middleware/logging.go:86 213.7µs       | ::1          | GET /v1/user/admin | {code: 20103, message: The token was invalid.}
+2022-05-02 21:02:51.752 INFO middleware/logging.go:86 26.506ms      | ::1          | GET /v1/user/admin | {code: 0, message: OK}
+2022-05-02 21:03:25.845 INFO user/create.go:24 User Create function called.
+2022-05-02 21:03:25.859 INFO middleware/logging.go:86 14.5015ms     | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:03:57.878 INFO user/create.go:24 User Create function called.
+2022-05-02 21:03:57.878 INFO middleware/logging.go:86 500.2µs       | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:04:50.591 INFO user/create.go:24 User Create function called.
+2022-05-02 21:04:50.591 INFO middleware/logging.go:86 500.2µs       | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:08:00.269 INFO user/create.go:24 User Create function called.
+2022-05-02 21:08:00.269 INFO middleware/logging.go:86 499.7µs       | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:08:18.058 INFO user/create.go:24 User Create function called.
+2022-05-02 21:08:18.058 INFO middleware/logging.go:86 500.3µs       | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:08:36.116 INFO user/create.go:24 User Create function called.
+2022-05-02 21:08:36.116 INFO middleware/logging.go:86 636µs         | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:08:54.512 INFO user/create.go:24 User Create function called.
+2022-05-02 21:08:54.512 INFO middleware/logging.go:86 499.7µs       | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:09:53.118 INFO user/create.go:24 User Create function called.
+2022-05-02 21:09:53.118 INFO middleware/logging.go:86 496.6µs       | ::1          | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 21:10:39.481 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 21:13:44.976 INFO middleware/logging.go:86 502.8µs       | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 21:16:02.171 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 21:17:40.638 INFO middleware/logging.go:86 362.7µs       | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 21:21:43.001 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 21:21:43.001 INFO middleware/logging.go:86 463.2µs       | ::1          | POST /v1/login      | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 21:22:15.554 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 21:22:15.554 INFO middleware/logging.go:86 457.8µs       | ::1          | POST /login      | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 21:23:47.065 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 21:23:47.065 INFO middleware/logging.go:86 0s            | ::1          | POST /login      | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 21:23:48.503 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 21:23:48.503 INFO middleware/logging.go:86 368.2µs       | ::1          | POST /login      | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 21:48:37.147 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 21:48:37.244 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 21:48:37.244 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 21:48:37.753 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-02 22:16:25.675 INFO middleware/logging.go:86 540.1µs       | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 22:17:02.455 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-02 22:18:52.549 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 22:18:52.655 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 22:18:52.655 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 22:18:53.164 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-02 22:19:28.274 INFO user/create.go:24 User Create function called.
+2022-05-02 22:19:28.456 INFO middleware/logging.go:86 182.0471ms    | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}
+2022-05-02 22:21:24.489 INFO user/create.go:24 User Create function called.
+2022-05-02 22:21:24.659 INFO middleware/logging.go:86 169.5326ms    | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}
+2022-05-02 22:27:53.913 INFO user/create.go:24 User Create function called.
+2022-05-02 22:27:54.081 INFO middleware/logging.go:86 167.5221ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-02 22:30:33.193 INFO user/create.go:24 User Create function called.
+2022-05-02 22:30:33.353 INFO middleware/logging.go:86 160.3039ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-02 22:30:42.579 INFO user/create.go:24 User Create function called.
+2022-05-02 22:30:42.748 INFO middleware/logging.go:86 169.0309ms    | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}
+2022-05-02 22:31:17.057 INFO user/list.go:13 List function called.
+2022-05-02 22:31:17.074 INFO middleware/logging.go:86 17.5033ms     | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-02 22:32:01.133 INFO user/list.go:13 List function called.
+2022-05-02 22:32:01.144 INFO middleware/logging.go:86 10.7536ms     | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-02 22:33:38.504 INFO user/list.go:13 List function called.
+2022-05-02 22:33:38.514 INFO middleware/logging.go:86 10.0005ms     | ::1          | GET /v1/user | {code: 0, message: OK}
+2022-05-02 22:33:54.710 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:33:54.710 INFO middleware/logging.go:86 519.4µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:36:52.287 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:36:52.287 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:36:56.433 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:36:56.433 INFO middleware/logging.go:86 173.9µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:36:56.827 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:36:56.827 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:37:17.049 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:37:17.049 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:37:30.976 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:37:30.976 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:38:05.005 INFO user/list.go:13 List function called.
+2022-05-02 22:38:05.021 INFO middleware/logging.go:86 16.2827ms     | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-02 22:38:40.053 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:38:40.053 INFO middleware/logging.go:86 213.2µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:38:40.431 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:38:40.431 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:10.624 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:10.624 INFO middleware/logging.go:86 523.1µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:15.449 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:15.449 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:15.941 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:15.942 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:16.295 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:16.295 INFO middleware/logging.go:86 427.7µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:16.665 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:16.665 INFO middleware/logging.go:86 609.4µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:17.113 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:17.114 INFO middleware/logging.go:86 501.3µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:39:27.586 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:39:27.586 INFO middleware/logging.go:86 587.6µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:41:17.568 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:41:17.568 INFO middleware/logging.go:86 523.9µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:41:17.925 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:41:17.926 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:41:40.264 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:41:40.264 INFO middleware/logging.go:86 120.7µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:43:11.539 INFO user/list.go:13 List function called.
+2022-05-02 22:43:11.557 INFO middleware/logging.go:86 17.7978ms     | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-02 22:43:54.116 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:43:54.116 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:44:01.672 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:44:01.672 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:44:28.617 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:44:28.617 INFO middleware/logging.go:86 469.4µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:45:02.891 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:45:02.891 INFO middleware/logging.go:86 437.1µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:02.471 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:02.471 INFO middleware/logging.go:86 633.3µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:10.607 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:10.607 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:37.792 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:37.792 INFO middleware/logging.go:86 499.8µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:49.864 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:49.864 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:52.124 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:52.124 INFO middleware/logging.go:86 498.1µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:52.438 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:52.438 INFO middleware/logging.go:86 378.5µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:52.842 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:52.842 INFO middleware/logging.go:86 568µs         | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:50:53.234 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:50:53.234 INFO middleware/logging.go:86 0s            | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:51:16.060 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:51:16.060 INFO middleware/logging.go:86 219.2µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:54:32.523 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:54:32.523 INFO middleware/logging.go:86 563µs         | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:54:36.400 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:54:36.400 INFO middleware/logging.go:86 457.1µs       | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:54:39.862 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:54:39.862 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:55:31.026 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:55:31.026 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:56:43.057 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:56:43.057 INFO middleware/logging.go:86 495.9µs       | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:57:07.143 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:57:07.143 INFO middleware/logging.go:86 228.1µs       | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:58:42.756 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:58:42.756 INFO middleware/logging.go:86 296.7µs       | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 22:58:50.020 INFO user/list.go:13 List function called.
+2022-05-02 22:58:50.042 INFO middleware/logging.go:86 22.0039ms     | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-02 22:59:02.744 ERROR middleware/logging.go:78 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-02 22:59:02.744 INFO middleware/logging.go:86 512.7µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-02 23:04:10.407 INFO middleware/logging.go:86 8.002ms       | 127.0.0.1    | DELETE /v1/user/2 | {code: 0, message: OK}
+2022-05-02 23:06:11.150 INFO middleware/logging.go:86 7.4968ms      | 127.0.0.1    | DELETE /v1/user/3 | {code: 0, message: OK}
+2022-05-02 23:06:14.166 INFO middleware/logging.go:86 12.1354ms     | 127.0.0.1    | DELETE /v1/user/4 | {code: 0, message: OK}
+2022-05-02 23:06:55.863 INFO user/list.go:13 List function called.
+2022-05-02 23:06:55.869 INFO middleware/logging.go:86 5.5021ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}

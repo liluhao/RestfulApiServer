@@ -8,6 +8,7 @@ type Errno struct {
 	Message string
 }
 
+//Errno是实现了error接口的
 func (err Errno) Error() string {
 	return err.Message
 }
@@ -23,12 +24,14 @@ type Err struct {
 func New(errno *Errno, err error) *Err {
 	return &Err{Code: errno.Code, Message: errno.Message, Err: err}
 }
+
+//解析定制的错误
 func DecodeErr(err error) (int, string) {
 	//如果err=nil,则errno.DecodeErr(err)会返回成功的code:0和message:OK。
 	if err == nil {
 		return OK.Code, OK.Message
 	}
-
+	//对接口进行断言
 	switch typed := err.(type) {
 	case *Err:
 		return typed.Code, typed.Message
@@ -37,7 +40,7 @@ func DecodeErr(err error) (int, string) {
 	default:
 	}
 
-	return InternalServerError.Code, err.Error()
+	return InternalServerError.Code, err.Error() //错误不是自定制错误时，返回该错误
 }
 
 //同时也提供了Add()和Addf()函数，如果想对外展示更多的信息可以调用比函数，使用方法

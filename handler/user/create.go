@@ -21,11 +21,12 @@ import (
 
 */
 func Create(c *gin.Context) {
-	log.Info("User Create function called.", lager.Data{"X-Request-Id": util.GetReqID(c)})
+	log.Info("User Create function called.", lager.Data{"X-Request-Id": util.GetReqID(c)}) //lager是一个type Data map[string]interface{}
 	var r CreateRequest
 	//自动解析，并且失败的话会写一个400状态码
 	if err := c.Bind(&r); err != nil {
-		//即发起请求时既不传入用户名，也不出传入密码
+		//即发起请求时既不传入用户名，也不出传入密码，返回ErrBind错误
+		//Errno是实现了error接口的，所以可以传入，并且以指针行形式赋值给error接口
 		handler.SendResponse(c, errno.ErrBind, nil)
 		return
 	}
