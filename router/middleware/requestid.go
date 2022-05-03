@@ -23,7 +23,7 @@ func RequestId() gin.HandlerFunc {
 		c.Set("X-Request-Id", requestId)
 
 		// Set X-Request-Id header
-		c.Writer.Header().Set("X-Request-Id", requestId)
+		c.Writer.Header().Set("X-Request-Id", requestId) //
 		c.Next()
 	}
 }

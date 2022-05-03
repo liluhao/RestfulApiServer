@@ -31,11 +31,14 @@ func Create(c *gin.Context) {
 		return
 	}
 
+	if err := r.CheckParam(); err != nil {
+		handler.SendResponse(c, err, nil)
+		return
+	}
 	u := model.UserModel{
 		Username: r.Username,
 		Password: r.Password,
 	}
-
 	if err := u.Validate(); err != nil {
 		handler.SendResponse(c, errno.ErrValidation, nil)
 		return
@@ -46,6 +49,7 @@ func Create(c *gin.Context) {
 		handler.SendResponse(c, errno.ErrEncrypt, nil)
 		return
 	}
+
 	// 插入这个用户到数据库
 	if err := u.Create(); err != nil {
 		handler.SendResponse(c, errno.ErrDatabase, nil)

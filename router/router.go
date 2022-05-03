@@ -42,7 +42,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	/*在RESTful API开发中，API经常会变动，为了兼容老的API,引入了版本的概念，比如上例中的v1/user,说明该API版本是v1。
 	很多RESTful API最佳实践文章中均建议使用版本控制，笔者这里也建议对API使用版本控制。*/
 	u := g.Group("/v1/user")
-	//u.Use(middleware.AuthMiddleware()) //第三种中间件：群组中间件
+	u.Use(middleware.AuthMiddleware()) //第三种中间件：群组中间件
 	{
 		u.POST("", user.Create)       //创建用户
 		u.DELETE("/:id", user.Delete) //删除用户

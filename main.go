@@ -30,7 +30,7 @@ func main() {
 	pflag.Parse()
 	if *version {
 		v := v.Get()
-		marshalled, err := json.MarshalIndent(&v, "", "  ")
+		marshalled, err := json.MarshalIndent(&v, "", "  ") //MarshalIndent类似Marshal但会使用缩进将输出格式化。
 		if err != nil {
 			fmt.Printf("%v\n", err)
 			os.Exit(1)

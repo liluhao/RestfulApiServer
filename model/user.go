@@ -23,6 +23,7 @@ func (c *UserModel) TableName() string {
 //在Create()函数中引用的数据库实例是DB.Self,该实例在API启动之前已经完成初始化。
 //DB是个全局变量，可以直接引用。
 func (u *UserModel) Create() error {
+
 	return DB.Self.Create(&u).Error
 }
 
@@ -30,7 +31,7 @@ func (u *UserModel) Create() error {
 func DeleteUser(id uint64) error {
 	user := UserModel{}
 	user.BaseModel.Id = id
-	return DB.Self.Delete(&user).Error
+	return DB.Self.Unscoped().Delete(&user).Error //硬删除
 }
 
 // Update updates an user account information.

@@ -216,3 +216,225 @@
 2022-05-02 23:06:14.166 INFO middleware/logging.go:86 12.1354ms     | 127.0.0.1    | DELETE /v1/user/4 | {code: 0, message: OK}
 2022-05-02 23:06:55.863 INFO user/list.go:13 List function called.
 2022-05-02 23:06:55.869 INFO middleware/logging.go:86 5.5021ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-02 23:29:39.029 INFO user/create.go:24 User Create function called.
+2022-05-02 23:29:39.031 INFO middleware/logging.go:86 1.8127ms      | 127.0.0.1    | POST /v1/user | {code: 10002, message: Error occurred while binding the request body to the struct.}
+2022-05-02 23:29:54.982 INFO user/create.go:24 User Create function called.
+2022-05-02 23:29:54.983 INFO middleware/logging.go:86 801.7µs       | 127.0.0.1    | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 23:35:57.962 INFO user/create.go:24 User Create function called.
+2022-05-02 23:35:57.962 INFO middleware/logging.go:86 274.4µs       | 127.0.0.1    | POST /v1/user | {code: 20001, message: Validation failed.}
+2022-05-02 23:37:12.488 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-02 23:37:12.608 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-02 23:37:12.608 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-02 23:37:13.112 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-02 23:37:18.073 INFO user/create.go:24 User Create function called.
+2022-05-02 23:37:18.074 INFO middleware/logging.go:86 727.8µs       | 127.0.0.1    | POST /v1/user | {code: 20001, message: Validation failed.password is empty. }
+2022-05-02 23:37:50.013 INFO user/create.go:24 User Create function called.
+2022-05-02 23:37:50.013 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user | {code: 20001, message: Validation failed.username is empty. }
+2022-05-02 23:38:04.846 INFO user/create.go:24 User Create function called.
+2022-05-02 23:38:05.009 INFO middleware/logging.go:86 162.5244ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-02 23:38:19.157 INFO user/create.go:24 User Create function called.
+2022-05-02 23:38:19.314 INFO middleware/logging.go:86 157.0267ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 14:51:46.955 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 14:51:47.059 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 14:51:47.059 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 14:51:47.561 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 14:52:52.453 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 14:52:52.574 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 14:52:52.574 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 14:52:52.577 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 14:52:52.579 INFO restfulapiserver/main.go:84 listen tcp :8081: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 14:52:52.579 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 15:01:19.636 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:01:19.764 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:01:19.764 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:01:20.267 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 15:01:32.152 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:01:32.267 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:01:32.267 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:01:32.271 INFO restfulapiserver/main.go:84 listen tcp :8081: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 15:01:32.271 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 15:03:06.761 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:03:06.909 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:03:06.909 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:03:07.412 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 15:03:58.491 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:03:58.629 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:03:58.629 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:03:59.132 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 15:04:07.740 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:04:07.831 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:04:07.831 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:04:07.833 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 15:04:07.834 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 15:04:07.834 INFO restfulapiserver/main.go:84 listen tcp :8081: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 15:08:28.511 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:08:28.587 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:08:28.587 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:08:29.091 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 15:09:16.584 INFO user/list.go:13 List function called.
+2022-05-03 15:09:16.602 INFO middleware/logging.go:86 18.027ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 15:11:15.112 INFO user/create.go:24 User Create function called.
+2022-05-03 15:11:15.113 INFO middleware/logging.go:86 464.6µs       | 127.0.0.1    | POST /v1/user | {code: 10002, message: Error occurred while binding the request body to the struct.}
+2022-05-03 15:12:09.724 INFO user/create.go:24 User Create function called.
+2022-05-03 15:12:09.724 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user | {code: 10001, message: password is empty}
+2022-05-03 15:18:17.374 INFO user/create.go:24 User Create function called.
+2022-05-03 15:18:17.374 INFO middleware/logging.go:86 0s            | 127.0.0.1    | POST /v1/user | {code: 20001, message: Validation failed.username is empty. }
+2022-05-03 15:18:35.716 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 15:18:35.799 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 15:18:35.806 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 15:18:36.302 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 15:18:40.721 INFO user/create.go:24 User Create function called.
+2022-05-03 15:18:40.722 INFO middleware/logging.go:86 499.7µs       | 127.0.0.1    | POST /v1/user | {code: 20102, message: The user was not found.This is add message }
+2022-05-03 15:46:21.143 INFO middleware/logging.go:86 5.5668ms      | 127.0.0.1    | DELETE /v1/user/2 | {code: 0, message: OK}
+2022-05-03 15:49:58.820 INFO middleware/logging.go:86 10.384ms      | 127.0.0.1    | DELETE /v1/user/2 | {code: 0, message: OK}
+2022-05-03 15:50:02.156 INFO middleware/logging.go:86 6.5015ms      | 127.0.0.1    | DELETE /v1/user/5 | {code: 0, message: OK}
+2022-05-03 15:50:05.383 INFO middleware/logging.go:86 3.8606ms      | 127.0.0.1    | DELETE /v1/user/100 | {code: 0, message: OK}
+2022-05-03 16:32:45.527 INFO middleware/logging.go:86 10.934ms      | 127.0.0.1    | GET /v1/user/kong | {code: 20102, message: The user was not found.}
+2022-05-03 16:33:46.407 INFO user/create.go:24 User Create function called.
+2022-05-03 16:33:46.578 INFO middleware/logging.go:86 170.9826ms    | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}
+2022-05-03 16:34:19.632 INFO middleware/logging.go:86 4.483ms       | 127.0.0.1    | GET /v1/user/llh | {code: 0, message: OK}
+2022-05-03 16:37:10.992 INFO user/update.go:17 Update function called.
+2022-05-03 16:37:11.153 INFO middleware/logging.go:86 161.5358ms    | 127.0.0.1    | PUT /v1/user/5 | {code: 0, message: OK}
+2022-05-03 16:37:18.417 INFO middleware/logging.go:86 3.4974ms      | 127.0.0.1    | GET /v1/user/llh | {code: 0, message: OK}
+2022-05-03 16:37:39.214 INFO user/update.go:17 Update function called.
+2022-05-03 16:37:39.378 INFO middleware/logging.go:86 164.1433ms    | 127.0.0.1    | PUT /v1/user/5 | {code: 0, message: OK}
+2022-05-03 16:37:41.584 INFO middleware/logging.go:86 3.0433ms      | 127.0.0.1    | GET /v1/user/llh | {code: 0, message: OK}
+2022-05-03 16:38:49.175 INFO user/list.go:13 List function called.
+2022-05-03 16:38:49.182 INFO middleware/logging.go:86 7.5029ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 16:39:09.978 INFO middleware/logging.go:86 3.3518ms      | 127.0.0.1    | DELETE /v1/user/2 | {code: 0, message: OK}
+2022-05-03 16:39:12.744 INFO user/list.go:13 List function called.
+2022-05-03 16:39:12.750 INFO middleware/logging.go:86 6.5041ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 16:39:56.794 INFO middleware/logging.go:86 3.3725ms      | 127.0.0.1    | DELETE /v1/user/2 | {code: 0, message: OK}
+2022-05-03 16:40:02.433 INFO user/list.go:13 List function called.
+2022-05-03 16:40:02.439 INFO middleware/logging.go:86 5.499ms       | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 16:41:36.240 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 16:41:36.334 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 16:41:36.334 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 16:41:36.837 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 16:41:48.800 INFO user/list.go:13 List function called.
+2022-05-03 16:41:48.806 INFO middleware/logging.go:86 6.8713ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 16:42:02.135 INFO middleware/logging.go:86 11.0344ms     | 127.0.0.1    | DELETE /v1/user/2 | {code: 0, message: OK}
+2022-05-03 16:42:11.342 INFO middleware/logging.go:86 10.4667ms     | 127.0.0.1    | DELETE /v1/user/3 | {code: 0, message: OK}
+2022-05-03 16:42:13.773 INFO middleware/logging.go:86 4.7473ms      | 127.0.0.1    | DELETE /v1/user/4 | {code: 0, message: OK}
+2022-05-03 16:42:43.368 INFO middleware/logging.go:86 10.432ms      | 127.0.0.1    | DELETE /v1/user/5 | {code: 0, message: OK}
+2022-05-03 16:42:57.299 INFO user/list.go:13 List function called.
+2022-05-03 16:42:57.305 INFO middleware/logging.go:86 5.2756ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 17:35:07.041 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 17:35:07.114 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 17:35:07.115 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 17:35:07.617 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 17:39:43.616 INFO middleware/logging.go:89 155.8963ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 17:41:03.291 INFO middleware/logging.go:89 0s            | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 17:50:09.768 INFO middleware/logging.go:89 370.4µs       | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 17:50:28.930 INFO middleware/logging.go:89 0s            | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 17:50:55.690 INFO user/list.go:13 List function called.
+2022-05-03 17:50:55.696 INFO middleware/logging.go:89 6.5005ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 17:55:15.359 INFO middleware/logging.go:89 0s            | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 18:00:10.794 ERROR middleware/logging.go:81 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-03 18:00:10.794 INFO middleware/logging.go:89 318.7µs       | 127.0.0.1    | POST /v1/login | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-03 18:00:23.673 INFO middleware/logging.go:89 371.9µs       | 127.0.0.1    | POST /login | {code: 10002, message: Error occurred while binding the request body to the struct.}
+2022-05-03 18:01:15.084 INFO middleware/logging.go:89 153.7052ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 18:08:48.584 INFO middleware/logging.go:89 0s            | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 18:10:39.348 ERROR middleware/logging.go:81 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-03 18:10:39.348 INFO middleware/logging.go:89 0s            | 127.0.0.1    | POST /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-03 18:10:55.329 INFO middleware/logging.go:89 4.9966ms      | 127.0.0.1    | POST /login | {code: 20102, message: The user was not found.}
+2022-05-03 18:11:10.980 INFO middleware/logging.go:89 157.0266ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 18:12:24.216 INFO user/create.go:24 User Create function called.
+2022-05-03 18:12:24.374 INFO middleware/logging.go:89 158.529ms     | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 18:13:31.687 INFO user/create.go:24 User Create function called.
+2022-05-03 18:13:31.845 INFO middleware/logging.go:89 158.0273ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 18:14:07.251 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 18:14:07.321 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 18:14:07.322 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 18:14:07.824 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 18:14:11.228 INFO user/create.go:24 User Create function called.
+2022-05-03 18:14:11.392 INFO middleware/logging.go:89 164.5292ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 18:14:12.705 INFO user/create.go:24 User Create function called.
+2022-05-03 18:14:12.864 INFO middleware/logging.go:89 159.0264ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 18:14:13.773 INFO user/create.go:24 User Create function called.
+2022-05-03 18:14:13.933 INFO middleware/logging.go:89 159.5301ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 18:16:18.760 INFO user/create.go:24 User Create function called.
+2022-05-03 18:16:18.760 INFO middleware/logging.go:89 0s            | 127.0.0.1    | POST /v1/user | {code: 10001, message: password is empty}
+2022-05-03 18:16:39.279 INFO user/create.go:24 User Create function called.
+2022-05-03 18:16:39.279 INFO middleware/logging.go:89 474.2µs       | 127.0.0.1    | POST /v1/user | {code: 10002, message: Error occurred while binding the request body to the struct.}
+2022-05-03 18:16:44.182 INFO user/list.go:13 List function called.
+2022-05-03 18:16:44.188 INFO middleware/logging.go:89 6.0301ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 18:16:56.540 INFO middleware/logging.go:89 3.3268ms      | 127.0.0.1    | GET /v1/user/llh | {code: 20102, message: The user was not found.}
+2022-05-03 18:17:05.318 INFO middleware/logging.go:89 3.5006ms      | 127.0.0.1    | GET /v1/user/admin | {code: 0, message: OK}
+2022-05-03 18:17:40.977 INFO user/create.go:24 User Create function called.
+2022-05-03 18:17:41.137 INFO middleware/logging.go:89 159.5284ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 18:59:36.229 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 18:59:36.304 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 18:59:36.304 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 18:59:36.807 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 18:59:45.127 INFO user/create.go:25 User Create function called.
+2022-05-03 18:59:45.287 INFO middleware/logging.go:89 161.0329ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:00:13.354 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:00:13.411 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:00:13.411 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:00:13.413 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 19:00:13.415 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:00:13.415 INFO restfulapiserver/main.go:84 listen tcp :8081: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:01:15.014 INFO user/create.go:25 User Create function called.
+2022-05-03 19:01:15.181 INFO middleware/logging.go:89 167.0299ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:01:16.274 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:01:16.334 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:01:16.334 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:01:16.336 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:01:21.194 INFO user/create.go:25 User Create function called.
+2022-05-03 19:01:21.357 INFO middleware/logging.go:89 162.5285ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:01:43.201 INFO user/create.go:25 User Create function called.
+2022-05-03 19:01:43.364 INFO middleware/logging.go:89 163.0282ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:01:47.081 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:01:47.149 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:01:47.149 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:01:47.151 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:01:47.151 INFO restfulapiserver/main.go:84 listen tcp :8081: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:01:52.700 INFO user/create.go:25 User Create function called.
+2022-05-03 19:01:52.860 INFO middleware/logging.go:89 160.5313ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:02:09.858 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:02:09.919 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:02:09.919 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:02:09.921 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:03:41.833 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:03:41.895 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:03:41.896 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:03:41.897 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 19:03:41.898 INFO restfulapiserver/main.go:84 listen tcp :8081: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:03:41.898 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:06:11.581 ERROR middleware/logging.go:81 response body can not unmarshal to model.Response struct, body: `The incorrect API route.` error: invalid character 'T' looking for beginning of value
+2022-05-03 19:06:11.581 INFO middleware/logging.go:89 268.6µs       | 127.0.0.1    | GET /v1/user  | {code: 10001, message: invalid character 'T' looking for beginning of value}
+2022-05-03 19:09:14.291 INFO middleware/logging.go:89 154.841ms     | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 19:20:18.763 INFO middleware/logging.go:89 154.2692ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 19:22:33.619 INFO middleware/logging.go:89 2.9986ms      | 127.0.0.1    | GET /v1/user/admin | {code: 0, message: OK}
+2022-05-03 19:23:32.338 INFO middleware/logging.go:89 153.4102ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 19:23:47.330 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:23:47.407 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:23:47.407 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:23:47.909 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 19:25:48.797 INFO middleware/logging.go:89 155.0286ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 19:26:39.250 INFO user/create.go:24 User Create function called.
+2022-05-03 19:26:39.251 INFO middleware/logging.go:89 0s            | 127.0.0.1    | POST /v1/user | {code: 20102, message: The user was not found.This is add message }
+2022-05-03 19:27:26.281 INFO user/create.go:24 User Create function called.
+2022-05-03 19:27:26.446 INFO middleware/logging.go:89 165.4295ms    | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}
+2022-05-03 19:27:36.778 INFO user/create.go:24 User Create function called.
+2022-05-03 19:27:36.945 INFO middleware/logging.go:89 166.5302ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:28:33.498 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:28:33.567 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:28:33.569 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:28:33.570 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-03 19:29:08.562 INFO middleware/logging.go:89 412.6µs       | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 19:29:19.077 INFO middleware/logging.go:89 155.5288ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 19:29:28.294 INFO middleware/logging.go:89 275.2µs       | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}
+2022-05-03 19:29:48.918 INFO middleware/logging.go:89 155.3764ms    | 127.0.0.1    | POST /login | {code: 0, message: OK}
+2022-05-03 19:32:52.123 INFO user/create.go:24 User Create function called.
+2022-05-03 19:32:52.280 INFO middleware/logging.go:89 157.4512ms    | 127.0.0.1    | POST /v1/user | {code: 20002, message: Database error.}
+2022-05-03 19:33:27.593 INFO user/create.go:24 User Create function called.
+2022-05-03 19:33:27.754 INFO middleware/logging.go:89 161.8995ms    | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}
+2022-05-03 19:34:43.636 INFO user/list.go:13 List function called.
+2022-05-03 19:34:43.643 INFO middleware/logging.go:89 7.0045ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}
+2022-05-03 19:38:26.693 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-03 19:38:26.755 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-03 19:38:26.755 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-03 19:38:26.757 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022-05-03 19:38:26.757 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
