@@ -438,3 +438,55 @@
 2022-05-03 19:38:26.755 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
 2022-05-03 19:38:26.757 INFO restfulapiserver/main.go:90 listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
 2022-05-03 19:38:26.757 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-04 00:12:45.667 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: dial tcp: lookup tcp///39.101.149.4: getaddrinfow: The specified class was not found.
+2022-05-04 00:12:45.728 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-04 00:12:45.734 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-04 00:12:45.735 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :6991
+2022-05-04 00:12:47.864 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:12:50.994 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:12:54.123 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:12:57.243 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:00.842 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:03.967 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:07.093 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:10.212 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:13.640 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:16.771 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:13:17.771 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-04 00:16:39.357 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: dial tcp: lookup tcp///39.101.149.4: getaddrinfow: The specified class was not found.
+2022-05-04 00:16:39.417 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-04 00:16:39.423 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :6990
+2022-05-04 00:16:39.423 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :6991
+2022-05-04 00:16:41.552 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:16:44.679 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:16:47.788 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:16:50.899 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:16:54.026 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:16:57.151 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:17:00.274 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:17:03.409 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:17:06.535 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:17:09.653 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 00:17:10.653 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-04 20:45:46.224 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: dial tcp: lookup tcp///39.101.149.4: getaddrinfow: The specified class was not found.
+2022-05-04 20:45:46.292 ERROR model/init.go:65 Database connection failed. Database name: db_apiserver error: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-05-04 20:45:46.300 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :6990
+2022-05-04 20:45:46.301 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :6991
+2022-05-04 20:45:48.440 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:45:51.568 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:45:54.698 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:45:57.826 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:00.938 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:04.063 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:07.453 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:10.581 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:13.702 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:16.821 INFO restfulapiserver/main.go:103 Waiting for the router, retry in 1 second.
+2022-05-04 20:46:17.822 FATAL restfulapiserver/main.go:66 The router has no response, or it might took too long to start up. error: Cannot connect to the router.
+2022-05-04 22:24:57.411 INFO restfulapiserver/main.go:89 Start to listening the incoming requests on http address: :8080
+2022-05-04 22:24:57.411 INFO restfulapiserver/main.go:83 Start to listening the incoming requests on https address: :8081
+2022-05-04 22:24:57.913 INFO restfulapiserver/main.go:68 The router has been deployed successfully.
+2022-05-04 22:26:12.414 INFO middleware/logging.go:89 18.0504ms     | 127.0.0.1    | GET /v1/user/admin | {code: 0, message: OK}
+2022-05-04 22:27:40.590 INFO middleware/logging.go:89 4.9643ms      | 127.0.0.1    | GET /v1/user/admin | {code: 0, message: OK}
+2022-05-04 23:14:48.930 INFO config/config.go:86 Config file changed: D:\all project\go\restfulapiserver\conf\config.yaml
+2022-05-04 23:14:48.941 INFO config/config.go:86 Config file changed: D:\all project\go\restfulapiserver\conf\config.yaml
