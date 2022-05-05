@@ -18,14 +18,26 @@ const (
 	GB = 1024 * MB
 )
 
-//检查API Server的状态：健康状况。
-func HealthCheck(c *gin.Context) {
+// @Summary Shows OK as the ping-pong result
+// @Description Shows OK as the ping-pong result
+// @Tags sd
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "OK"
+// @Router /sd/health [get]
+func HealthCheck(c *gin.Context) { //检查API Server的状态：健康状况。
 	message := "OK"
 	c.String(http.StatusOK, message+"\n")
 }
 
-//检查API Server的状态：服务器硬盘
-func DiskCheck(c *gin.Context) {
+// @Summary Checks the disk usage
+// @Description Checks the disk usage
+// @Tags sd
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "OK - Free space: 17233MB (16GB) / 51200MB (50GB) | Used: 33%"
+// @Router /sd/disk [get]
+func DiskCheck(c *gin.Context) { //检查API Server的状态：服务器硬盘
 	u, _ := disk.Usage("/")
 
 	usedMB := int(u.Used) / MB
@@ -49,8 +61,14 @@ func DiskCheck(c *gin.Context) {
 	c.String(status, message+"\n")
 }
 
-//检查API Server的状态：CPU使用量。
-func CPUCheck(c *gin.Context) {
+// @Summary Checks the cpu usage
+// @Description Checks the cpu usage
+// @Tags sd
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "CRITICAL - Load average: 1.78, 1.99, 2.02 | Cores: 2"
+// @Router /sd/cpu [get]
+func CPUCheck(c *gin.Context) { //检查API Server的状态：CPU使用量。
 	cores, _ := cpu.Counts(false)
 
 	a, _ := load.Avg()
@@ -74,8 +92,14 @@ func CPUCheck(c *gin.Context) {
 	c.String(status, message+"\n")
 }
 
-//检查API Server的状态：内存使用量。
-func RAMCheck(c *gin.Context) {
+// @Summary Checks the ram usage
+// @Description Checks the ram usage
+// @Tags sd
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "OK - Free space: 402MB (0GB) / 8192MB (8GB) | Used: 4%"
+// @Router /sd/ram [get]
+func RAMCheck(c *gin.Context) { //检查API Server的状态：内存使用量。
 	u, _ := mem.VirtualMemory()
 
 	usedMB := int(u.Used) / MB

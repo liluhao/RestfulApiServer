@@ -26,6 +26,16 @@ var (
 	version = pflag.BoolP("version", "v", false, "show version info.")
 )
 
+// @title Apiserver Example API
+// @version 1.0
+// @description apiserver demo
+
+// @contact.name llh
+// @contact.url http://www.swagger.io/support
+// @contact.email 2415306912@qq.com
+
+// @host : http://www.foolartist.top:6990
+// @BasePath /v1
 func main() {
 	pflag.Parse()
 	if *version {

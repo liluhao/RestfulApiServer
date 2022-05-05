@@ -4,6 +4,7 @@ import (
 	"testing"
 )
 
+//测试用例
 func TestGenShortId(t *testing.T) {
 	shortId, err := GenShortId()
 	if shortId == "" || err != nil {
@@ -13,6 +14,7 @@ func TestGenShortId(t *testing.T) {
 	t.Log("GenShortId test pass")
 }
 
+//新增两个性能测试函数：BenchmarkGenShortId与BenchmarkGenShortIdTimeConsuming
 func BenchmarkGenShortId(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		GenShortId()

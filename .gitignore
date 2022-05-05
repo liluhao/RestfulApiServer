@@ -1,3 +1,11 @@
-# 忽略.idea文件
+# 忽略.idea文件夹
 .idea/
+
+# 忽略log文件夹
 log/
+
+#  表示忽略所有.exe结尾的文件
+*.out
+*.exe
+*.profile
+*.svg

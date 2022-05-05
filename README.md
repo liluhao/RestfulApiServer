@@ -1,5 +1,7 @@
 # 基于Go语言实现的RESTful API
 
+**注：本项目以上线本人阿里云服务器，具体访问规则在项目功能介绍**
+
 # 项目介绍
 
 
@@ -39,9 +41,9 @@
 * 部署阶段
   * 用Nginx部署API服务
 
->REST风格虽然适用于很多传输协议，但在实际开发中，REST由于天生和HTTP协议相辅相成，因此HTTP协议
->已经成了实现RESTful API事实上的标准。在HTTP协议中通过POST、DELETE、PUT、GET方法来对应REST资
->源的增、删、改、查操作，具体的对应关系如下：
+ REST风格虽然适用于很多传输协议，但在实际开发中，REST由于天生和HTTP协议相辅相成，因此HTTP协议
+已经成了实现RESTful API事实上的标准。在HTTP协议中通过POST、DELETE、PUT、GET方法来对应REST资
+源的增、删、改、查操作，具体的对应关系如下：
 
 | HTTP方法 | 行为                     | URI          | 示例说明                |
 | -------- | ------------------------ | ------------ | ----------------------- |
@@ -79,7 +81,7 @@
 
 # 项目部署指南
 
-* 1.服务器的MySQL数据库里导入如下db_apiserver数据库
+* 服务器的MySQL数据库里导入如下db_apiserver数据库
 
 ```mysql
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -141,12 +143,22 @@ UNLOCK TABLES;
 ```
 
 * [2.服务器上安装GoSDK v1.18.1详细教程](https://blog.csdn.net/weixin_52690231/article/details/124563906?utm_source=app&app_version=5.3.0&code=app_1562916241&uLinkId=usr1mkqgl919blen)
+* 3.新建项目文件夹，并git初始化仓库
 
-* 3.上传仓库代码到服务器addr等信息
-* 4.修改conf/config.yaml里
-* 5.在项目根目录执行如下命令项目即可启动成功
+* 4.上传代码到服务器，并进行git提交
 
 ```go
+mkdir restfulapiserver
+cd restfulapiserver
+git init 
+git add .
+git commit -m "2022.5.5"
+```
+
+* 5.修改conf/config.yaml里addr等信息
+* 6.在项目根目录执行如下命令项目即可启动成功
+
+```bash
 go run main.go
 ```
 
@@ -155,6 +167,12 @@ go run main.go
 ## 配置文件读取
 
 ## 记录和管理API日志
+
+**启动项目后，在项目根目录执行如下命令项目即可查看日志**
+
+```bash
+tail -f ./log/apiserver.log
+```
 
 ## 初始化MySQL建立连接
 
@@ -275,6 +293,7 @@ curl -XDELETE -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ
 ## Makefile管理API项目
 
 ```go
+//注意，必须得有.git文件存在，否则运行不起来；命令执行后项目目录下会生成apiserver文件
 make
 ```
 
@@ -283,7 +302,8 @@ make
 **查看api用法**
 
 ```bash
- ./admin.sh -h
+chmod 777 admin.sh
+./admin.sh -h
 ```
 
 **查看api状态**
@@ -295,6 +315,7 @@ make
 **启动api状态**
 
 ```bash
+//一定要必须得make命令执行完后，以下命令才有效
 ./admin.sh start
 ```
 
@@ -320,9 +341,73 @@ make
 
 ## go test测试代码
 
+**性能测试**
+
+```go
+cd util
+go test
+go test -v -count 2
+```
+
+**执行压力测试**
+
+```
+cd util
+go test -test.bench=".*"
+```
+
+**查看性能并生成函数调用图**
+
+安装graphviz
+
+```bash
+apt install graphviz
+dot -version
+```
+
+在项目根目录下执行以下命令
+
+```bash
+//该命令会在根目录下生成cup.profile 和util.tetx.exe文件
+go test -bench=".*" -cpuprofile=cpu.profile  ./util
+
+//执行完以下命令进入到交互界面后执行top命令会显示性能
+go tool pprof util.test cpu.profile
+top
+
+//执行完以上top命令会后继续进入到交互界面，输入svg后会在项目根目录生成svg图，需要以浏览器方式打开该文件进行浏览
+svg
+```
+
+**测试覆盖率**
+
+```bash
+cd  util
+
+//会在util目录下生成utilcover.out文件
+go test -coverprofile=cover.out
+
+go tool cover -func=cover.out
+```
+
 ## API性能分析
 
+**第一种方式获取profile采集信息**
+
+```bash
+//执行完以下命令进入到交互界面后执行topN命令会显示性能
+go tool pprof http://www.foolartist.top:6990/debug/pprof/profile
+```
+
+**第二种方式获取profile采集信息**
+
+[/debug/pprof/ (foolartist.top)](http://www.foolartist.top:6990/debug/pprof/)
+
 ## 生成Swagger在线文档
+
+**Swagger在线文档**
+
+[Swagger UI (foolartist.top)](http://www.foolartist.top:6990/swagger/index.html)
 
 ## API性能测试和调优
 
