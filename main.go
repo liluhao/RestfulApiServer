@@ -69,7 +69,7 @@ func main() {
 	//加载路由
 	router.Load(g, middleware.Logging(), middleware.RequestId())
 
-	// Ping 服务器以确保路由器正常工作。
+	// Ping服务器以确保路由器正常工作。
 	go func() {
 		if err := pingServer(); err != nil {
 			//引用的是"github.com/zxmrlc/log"里的
